@@ -1,4 +1,4 @@
-#Thu Jul 15 20:10:57 IST 2021
+#Tue Jul 20 12:00:55 IST 2021
 base.0=/Users/neosoft/Downloads/Flutter-Rick-and-Morty-Client-master/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

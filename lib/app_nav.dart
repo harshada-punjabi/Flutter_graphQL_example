@@ -10,9 +10,9 @@ class Appnav extends StatefulWidget {
   _AppnavState createState() => _AppnavState();
 }
 
-class CharactersNavigator extends StatefulWidget {
+class CharactersList extends StatefulWidget {
   @override
-  _CharactersNavigatorState createState() => _CharactersNavigatorState();
+  _CharactersListState createState() => _CharactersListState();
 }
 
 class _AppnavState extends State<Appnav> {
@@ -21,13 +21,13 @@ class _AppnavState extends State<Appnav> {
     return Scaffold(
       body: SafeArea(
           top: false,
-          child: CharactersNavigator(),),
+          child: CharactersList(),),
     );
   }
 
 }
 
-class _CharactersNavigatorState extends State<CharactersNavigator> {
+class _CharactersListState extends State<CharactersList> {
   @override
   Widget build(BuildContext context) {
     return Navigator(

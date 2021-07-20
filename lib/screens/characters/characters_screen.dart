@@ -105,16 +105,20 @@ class CharactersScreen extends StatelessWidget {
                     ),
                     subtitle: Text(character['species']),
                     trailing: Text(character['gender']),
-                    onTap: () => Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (_) => CharacterDetails(
-                          id: character['id'],
-                          characterName: character['name'],
-                          characterGender: character['gender'],
-                          characterSpecies: character['species'],
-                        ),
-                      ),
-                    ),
+                    onTap: () {
+                      Navigator
+                          .of(context)
+                          .push(
+                          MaterialPageRoute(
+                            builder: (_) =>
+                                CharacterDetails(
+                                  // id: character['id'],
+                                  // characterName: character['name'],
+                                  // characterGender: character['gender'],
+                                  // characterSpecies: character['species'],
+                                ),
+                          ));
+                      }
                   ),
                 );
               },

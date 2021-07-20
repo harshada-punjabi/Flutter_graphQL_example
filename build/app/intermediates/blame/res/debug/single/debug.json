@@ -4,6 +4,10 @@
         "source": "/Users/neosoft/.gradle/caches/transforms-2/files-2.1/6b399c2363bb098ebde1725d903cbda0/core-1.1.0/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
     },
     {
+        "merged": "/Users/neosoft/Downloads/Flutter-Rick-and-Morty-Client-master/build/app/intermediates/res/merged/debug/drawable_toast_bg.xml.flat",
+        "source": "/Users/neosoft/Downloads/Flutter-Rick-and-Morty-Client-master/build/fluttertoast/intermediates/packaged_res/debug/drawable/toast_bg.xml"
+    },
+    {
         "merged": "/Users/neosoft/Downloads/Flutter-Rick-and-Morty-Client-master/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "/Users/neosoft/.gradle/caches/transforms-2/files-2.1/6b399c2363bb098ebde1725d903cbda0/core-1.1.0/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
     },
@@ -46,6 +50,10 @@
     {
         "merged": "/Users/neosoft/Downloads/Flutter-Rick-and-Morty-Client-master/build/app/intermediates/res/merged/debug/drawable_notification_icon_background.xml.flat",
         "source": "/Users/neosoft/.gradle/caches/transforms-2/files-2.1/6b399c2363bb098ebde1725d903cbda0/core-1.1.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/neosoft/Downloads/Flutter-Rick-and-Morty-Client-master/build/app/intermediates/res/merged/debug/layout_toast_custom.xml.flat",
+        "source": "/Users/neosoft/Downloads/Flutter-Rick-and-Morty-Client-master/build/fluttertoast/intermediates/packaged_res/debug/layout/toast_custom.xml"
     },
     {
         "merged": "/Users/neosoft/Downloads/Flutter-Rick-and-Morty-Client-master/build/app/intermediates/res/merged/debug/drawable-v21_notification_action_background.xml.flat",
@@ -134,6 +142,10 @@
     {
         "merged": "/Users/neosoft/Downloads/Flutter-Rick-and-Morty-Client-master/build/app/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
         "source": "/Users/neosoft/Downloads/Flutter-Rick-and-Morty-Client-master/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/neosoft/Downloads/Flutter-Rick-and-Morty-Client-master/build/app/intermediates/res/merged/debug/drawable_corner.xml.flat",
+        "source": "/Users/neosoft/Downloads/Flutter-Rick-and-Morty-Client-master/build/fluttertoast/intermediates/packaged_res/debug/drawable/corner.xml"
     },
     {
         "merged": "/Users/neosoft/Downloads/Flutter-Rick-and-Morty-Client-master/build/app/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
