@@ -3,21 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 import 'package:ricky_n_morty/api_queries/graph_queries.dart'
     show getCharacterDetails;
+import 'package:ricky_n_morty/presentation/model/character_item.dart';
 
 class CharacterDetails extends StatelessWidget {
-  final String id,
-      characterName,
-      characterGender,
-      characterSpecies,
-      characterImage;
+
+ final CharacterItem characterItem;
 
   const CharacterDetails(
       {Key key,
-      this.id,
-      this.characterName,
-      this.characterGender,
-      this.characterSpecies,
-      this.characterImage})
+     this.characterItem})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -25,7 +19,7 @@ class CharacterDetails extends StatelessWidget {
       body: Query(
         options: QueryOptions(
             document: gql(getCharacterDetails),
-            variables: {"id": int.tryParse(id)}),
+            variables: {"id": int.tryParse(characterItem.id)}),
         builder: (result, {fetchMore, refetch}) {
           if (result.isLoading) {
             return Center(child: CircularProgressIndicator());
@@ -56,7 +50,7 @@ class CharacterDetails extends StatelessWidget {
                         color: Colors.black12,
                       ),
                     ),
-                    title: Text(characterName),
+                    title: Text(characterItem.name),
                   ),
                 ),
               ),
@@ -81,13 +75,13 @@ class CharacterDetails extends StatelessWidget {
                           Column(
                             children: <Widget>[
                               Text('SPECIES'),
-                              Text(characterSpecies)
+                              Text(characterItem.species)
                             ],
                           ),
                           Column(
                             children: <Widget>[
                               Text('GENDER'),
-                              Text(characterGender)
+                              Text(characterItem.gender.toString())
                             ],
                           ),
                           Column(
@@ -103,7 +97,7 @@ class CharacterDetails extends StatelessWidget {
                       ),
                       Text(
                           'Home Planet 🌍:  ${characterDetails['origin']['name']}'),
-                      Text('Episodes with $characterName'),
+                      Text('Episodes with ${characterItem.name}'),
                       Divider(),
                       Wrap(
                         spacing: 6,
