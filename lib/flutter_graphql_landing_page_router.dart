@@ -7,7 +7,7 @@ import 'package:ricky_n_morty/presentation/character_list/character_list_view.da
 import 'flutter_graphql_landing_page_route_path.dart';
 
 import 'screens/characters/character_details.dart';
-import 'screens/characters/characters_screen.dart';
+
 
 class FlutterGraphQLLandingRouter {
 
